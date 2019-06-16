@@ -1,15 +1,15 @@
-#include "CPU.hpp"
+#include "Ram.hpp"
 #include <sys/sysctl.h>
 
-CPU::CPU(){
+Ram::Ram(){
 	_tick_rate = 1;
-	_name = "CPU Info";
+	_name = "Ram Info";
 	//TODO: libs
 }
 
-CPU::~CPU(){}
+Ram::~Ram(){}
 
-std::vector<std::string> CPU::getInfo(){
+std::vector<std::string> Ram::getInfo(){
 	std::vector<std::string> list;
 	list.push_back("");
 	return list;
