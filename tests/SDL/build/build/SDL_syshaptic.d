@@ -1,0 +1,24 @@
+build/SDL_syshaptic.lo: \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/SDL_syshaptic.c \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../SDL_internal.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../dynapi/SDL_dynapi.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../dynapi/SDL_dynapi_overrides.h \
+ include/SDL_config.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_platform.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/begin_code.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/close_code.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_assert.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_config.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_haptic.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_stdinc.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_error.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_joystick.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../SDL_syshaptic.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../SDL_internal.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_joystick.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../joystick/SDL_sysjoystick.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../joystick/../SDL_internal.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../joystick/SDL_joystick_c.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../joystick/linux/SDL_sysjoystick_c.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../core/linux/SDL_udev.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/haptic/linux/../../core/linux/../../SDL_internal.h

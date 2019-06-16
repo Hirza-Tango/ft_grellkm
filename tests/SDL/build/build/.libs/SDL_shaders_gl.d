@@ -1,0 +1,24 @@
+build/SDL_shaders_gl.lo: \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/opengl/SDL_shaders_gl.c \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/opengl/../../SDL_internal.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/opengl/../../dynapi/SDL_dynapi.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/opengl/../../dynapi/SDL_dynapi_overrides.h \
+ include/SDL_config.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_platform.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/begin_code.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/close_code.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_stdinc.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_config.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_log.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_stdinc.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_opengl.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_opengl_glext.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_video.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_pixels.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_endian.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_rect.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_error.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_rwops.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_surface.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_blendmode.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/opengl/SDL_shaders_gl.h

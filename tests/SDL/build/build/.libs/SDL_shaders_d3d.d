@@ -1,0 +1,25 @@
+build/SDL_shaders_d3d.lo: \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/direct3d/SDL_shaders_d3d.c \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/direct3d/../../SDL_internal.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/direct3d/../../dynapi/SDL_dynapi.h \
+ /root/WTC/ft_grellkm/tests/SDL/src/render/direct3d/../../dynapi/SDL_dynapi_overrides.h \
+ include/SDL_config.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_platform.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/begin_code.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/close_code.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_render.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_stdinc.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_config.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_rect.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_error.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_pixels.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_endian.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_rwops.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_video.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_surface.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_blendmode.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_system.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_keyboard.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_keycode.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_scancode.h \
+ /root/WTC/ft_grellkm/tests/SDL/include/SDL_render.h
