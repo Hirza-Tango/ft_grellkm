@@ -2,12 +2,14 @@
 #define IMONITORMODULE_HPP
 
 #include <string>
+#include <vector>
 
 class IMonitorModule{
-private:
+protected:
 	std::string _name;
 	int _tick_rate;
 
+private:
 	IMonitorModule(const IMonitorModule &);
 	IMonitorModule &operator= (const IMonitorModule &);
 public:
@@ -15,7 +17,7 @@ public:
 	virtual ~IMonitorModule();
 
 	virtual std::vector<std::string> getInfo();
-	virtual std::string getName();
+	std::string getName();
 };
 
 #endif
