@@ -7,16 +7,12 @@
 
 class CPU: public IMonitorModule{
 private:
-	std::string _model;
-	std::string _clock_speed;
-	unsigned short cores;
-	float *percentage;
 	CPU(const CPU &);
 	CPU &operator= (const CPU &);
 public:
 	CPU();
 	~CPU();
-	std::vector<std::string> getInfo();
+	float getPercent();
 };
 
 #endif

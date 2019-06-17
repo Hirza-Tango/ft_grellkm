@@ -8,13 +8,12 @@
 
 class DateTime: public IMonitorModule{
 private:
-	std::time_t _dateTime;
 	DateTime(const DateTime &);
 	DateTime &operator= (const DateTime &);
 public:
 	DateTime();
 	~DateTime();
-	std::vector<std::string> getInfo();
+	float getPercent();
 };
 
 #endif
