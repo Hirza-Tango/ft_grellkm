@@ -7,10 +7,7 @@
 
 class Network: public IMonitorModule{
 private:
-	std::string _model;
-	std::string _clock_speed;
-	unsigned short cores;
-	float *percentage;
+	size_t _max_bandwidth;
 	Network(const Network &);
 	Network &operator= (const Network &);
 public:
