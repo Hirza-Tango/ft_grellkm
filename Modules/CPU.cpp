@@ -45,5 +45,5 @@ float CPU::getPercent(){
 		total += used;
 		total += load[i].cpu_ticks[CPU_STATE_IDLE];
 	}
-	return used/total;
+	return used/total * 100;
 }

@@ -29,5 +29,5 @@ float Ram::getPercent(){
 		reinterpret_cast<host_info_t>(&vmstat),
 		&count
 	);
-	return (vmstat.active_count + vmstat.inactive_count + vmstat.wire_count) * _page_size;
+	return ((vmstat.active_count + vmstat.inactive_count + vmstat.wire_count) * _page_size) / _mem * 100;
 }
