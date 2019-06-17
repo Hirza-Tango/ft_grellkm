@@ -2,7 +2,7 @@
 #define GUI_H
 
 #include <SDL2/SDL.h>
-#include <IMonitorModule.hpp>
+#include <SDL2/SDL_ttf.h>
 
 class Gui {
 	private:

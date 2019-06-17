@@ -16,10 +16,6 @@ Gui::Gui(void) {
     this->_texture = SDL_CreateTexture(this->_renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STATIC, 240, 600);
     this->_moduleIndex = 0;
     this->_borderColor = 0x000000FF;
-    this->_rect.x = 0;
-    this->_rect.y = 0;
-    this->_rect.w = 240;
-    this->_rect.h = 200;
 }
 
 void Gui::quitExec(void) {
@@ -43,6 +39,10 @@ void Gui::Draw(unsigned int const x, unsigned int const y, Uint32 color) {
 
 //Need to draw a block per module
 void Gui::DrawModuleBox(void) {
+	this->_rect.x = 0;
+    	this->_rect.y = 0;
+   	this->_rect.w = 240;
+    	this->_rect.h = 200;
 	SDL_SetRenderDrawColor(this->_renderer, 0, 0, 255, 255);
 	SDL_RenderFillRect(this->_renderer, &this->_rect);
 }
