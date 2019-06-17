@@ -3,14 +3,15 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
+#include <string>
 
 class GuiLetters {
 	public:
 	GuiLetters(void);
 	~GuiLetters(void);
-	GuiLetters & operator = (GuiLetters const & rhs);
+	GuiLetters & operator = (GuiLetters & rhs);
 	GuiLetters(GuiLetters const & guiL);
-	void Writetext(int x, int y, std::string text);
+	void Writetext(int x, int y, std::string text, SDL_Renderer *renderer);
 	void QuitLetter(void);
 	private:
 	SDL_Rect _rect;

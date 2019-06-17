@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../Gui.hpp"
+#include <Gui.hpp>
 
 int main(void) {
 	Gui gui;

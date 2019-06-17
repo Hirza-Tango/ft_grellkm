@@ -15,7 +15,7 @@ Gui::Gui(void) {
     this->_renderer = SDL_CreateRenderer(this->_window, -1, 0);
     this->_texture = SDL_CreateTexture(this->_renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STATIC, 240, 600);
     this->_moduleIndex = 0;
-    this->_borderColor = 0x000000FF;
+	this->_letters = new GuiLetters();
 }
 
 void Gui::quitExec(void) {
@@ -45,6 +45,8 @@ void Gui::DrawModuleBox(void) {
     	this->_rect.h = 200;
 	SDL_SetRenderDrawColor(this->_renderer, 0, 0, 255, 255);
 	SDL_RenderFillRect(this->_renderer, &this->_rect);
+	SDL_RenderPresent(this->_renderer);
+	this->_letters->Writetext(0, 0, "testing", this->_renderer);
 }
 
 void Gui::run(void) {

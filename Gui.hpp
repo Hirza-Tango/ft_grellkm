@@ -1,18 +1,19 @@
 #ifndef GUI_H
 #define GUI_H
 
+#include <GuiLetters.hpp>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 
 class Gui {
 	private:
+	GuiLetters *_letters;
 	SDL_Window *_window;
 	SDL_Event _event;
 	SDL_Texture *_texture;
 	SDL_Renderer *_renderer;
 	Uint32 *_pixels;
 	unsigned int _moduleIndex;
-	Uint32 _borderColor;
 	SDL_Rect _rect;
 	public:
 	void prepDraw(void);
