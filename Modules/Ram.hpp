@@ -8,6 +8,7 @@
 class Ram: public IMonitorModule{
 private:
 	uint64_t _mem;
+	uint64_t _page_size;
 	Ram(const Ram &);
 	Ram &operator= (const Ram &);
 public:
