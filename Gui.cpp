@@ -10,16 +10,19 @@ Gui::Gui(void) {
         std::cout << "SDL_Error" << SDL_GetError() << std::endl;
         return;
     }
-    this->_window = SDL_CreateWindow("ft_gkrellm", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 240, 640, SDL_WINDOW_SHOWN);
+    this->_window = SDL_CreateWindow("ft_gkrellm", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 240, 600, SDL_WINDOW_SHOWN);
     //The height should be calculated at runtime. TODO
     this->_renderer = SDL_CreateRenderer(this->_window, -1, 0);
-    this->_texture = SDL_CreateTexture(this->_renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STATIC, 240, 640);
-    this->_pixels = new Uint32[240 * 640];
-    memset(this->_pixels, 255, 240 * 640 * sizeof(Uint32)); //set initial white background
+    this->_texture = SDL_CreateTexture(this->_renderer, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STATIC, 240, 600);
+    this->_moduleIndex = 0;
+    this->_borderColor = 0x000000FF;
+    this->_rect.x = 0;
+    this->_rect.y = 0;
+    this->_rect.w = 240;
+    this->_rect.h = 200;
 }
 
 void Gui::quitExec(void) {
-	delete[] this->_pixels;
 	SDL_DestroyTexture(this->_texture);
 	SDL_DestroyRenderer(this->_renderer);
 	SDL_DestroyWindow(this->_window);
@@ -34,9 +37,14 @@ Gui const & Gui:: operator = (Gui const & rhs) {
 }
 
 void Gui::Draw(unsigned int const x, unsigned int const y, Uint32 color) {
-	int rX = x * 4;
-	int loc = rX * y;
+	int loc = x * y;
 	this->_pixels[loc] = color; //I guess this will print the pixels...
+}
+
+//Need to draw a block per module
+void Gui::DrawModuleBox(void) {
+	SDL_SetRenderDrawColor(this->_renderer, 0, 0, 255, 255);
+	SDL_RenderFillRect(this->_renderer, &this->_rect);
 }
 
 void Gui::run(void) {
@@ -48,8 +56,7 @@ void Gui::run(void) {
 			case SDL_QUIT:
 				Gui::quit = true;
 		}
-		SDL_RenderClear(this->_renderer);
-		SDL_RenderCopy(this->_renderer, this->_texture, NULL, NULL);
+		this->DrawModuleBox();
 		SDL_RenderPresent(this->_renderer);
 	}
 	if (Gui::quit) {

@@ -2,6 +2,7 @@
 #define GUI_H
 
 #include <SDL2/SDL.h>
+#include <IMonitorModule.hpp>
 
 class Gui {
 	private:
@@ -10,9 +11,13 @@ class Gui {
 	SDL_Texture *_texture;
 	SDL_Renderer *_renderer;
 	Uint32 *_pixels;
+	unsigned int _moduleIndex;
+	Uint32 _borderColor;
+	SDL_Rect _rect;
 	public:
 	void prepDraw(void);
 	void Draw(unsigned int const x, unsigned int const y, Uint32 color);
+	void DrawModuleBox(void);
 	void quitExec(void);
 	static bool quit;
 	Gui(void);
