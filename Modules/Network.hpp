@@ -16,7 +16,7 @@ private:
 public:
 	Network();
 	~Network();
-	std::vector<std::string> getInfo();
+	float getPercent();
 };
 
 #endif

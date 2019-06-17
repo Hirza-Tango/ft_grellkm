@@ -7,14 +7,12 @@
 
 class HostnameUsername: public IMonitorModule{
 private:
-	std::string _hostname;
-	std::string _username;
 	HostnameUsername(const HostnameUsername &);
 	HostnameUsername &operator= (const HostnameUsername &);
 public:
 	HostnameUsername();
 	~HostnameUsername();
-	std::vector<std::string> getInfo();
+	float getPercent();
 };
 
 #endif

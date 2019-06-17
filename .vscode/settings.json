@@ -49,6 +49,8 @@
 		"typeinfo": "cpp",
 		"utility": "cpp",
 		"*.tcc": "cpp",
-		"clocale": "cpp"
+		"clocale": "cpp",
+		"__split_buffer": "cpp",
+		"vector": "cpp"
 	}
 }

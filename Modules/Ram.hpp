@@ -7,15 +7,13 @@
 
 class Ram: public IMonitorModule{
 private:
-	long _mem_total;
-	long _mem_used;
-	long _mem_free;
+	uint64_t _mem;
 	Ram(const Ram &);
 	Ram &operator= (const Ram &);
 public:
 	Ram();
 	~Ram();
-	std::vector<std::string> getInfo();
+	float getPercent();
 };
 
 #endif
