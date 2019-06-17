@@ -1,20 +1,20 @@
 #include "OSInfo.hpp"
+#include <sys/utsname.h>
 
 OSInfo::OSInfo(){
 	_tick_rate = 0;
 	_name = "OS Info";
-	uname(&_info);
+	struct utsname uname_info;
+	uname(&uname_info);
+	_info.push_back(uname_info.sysname);
+	_info.push_back(uname_info.nodename);
+	_info.push_back(uname_info.machine);
+	_info.push_back(uname_info.version);
+	_info.push_back(uname_info.release);
 }
 
 OSInfo::~OSInfo(){}
 
-std::vector<std::string> OSInfo::getInfo(){
-	std::vector<std::string> list;
-	list.push_back(_info.domainname);
-	list.push_back(_info.machine);
-	list.push_back(_info.nodename);
-	list.push_back(_info.release);
-	list.push_back(_info.sysname);
-	list.push_back(_info.version);
-	return list;
+float OSInfo::getPercent(){
+	return -1;
 }

@@ -9,8 +9,6 @@ Network::Network(){
 
 Network::~Network(){}
 
-std::vector<std::string> Network::getInfo(){
-	std::vector<std::string> list;
-	list.push_back("");
-	return list;
+float Network::getPercent(){
+	//TODO:this;
 }

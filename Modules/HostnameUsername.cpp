@@ -5,19 +5,16 @@
 HostnameUsername::HostnameUsername(){
 	_name = "HostnameUsername";
 	_tick_rate = 0;
-	char hostname[HOST_NAME_MAX];
-	char username[LOGIN_NAME_MAX];
-	gethostname(hostname, HOST_NAME_MAX);
-	getlogin_r(username, LOGIN_NAME_MAX);
-	_hostname = hostname;
-	_username = username;
+	char hostname[_POSIX_HOST_NAME_MAX];
+	char username[_POSIX_LOGIN_NAME_MAX];
+	gethostname(hostname, _POSIX_HOST_NAME_MAX);
+	getlogin_r(username, _POSIX_LOGIN_NAME_MAX);
+	_info.push_back(hostname);
+	_info.push_back(username);
 }
 
 HostnameUsername::~HostnameUsername(){}
 
-std::vector<std::string> HostnameUsername::getInfo(){
-	std::vector<std::string> list;
-	list.push_back(_hostname);
-	list.push_back(_username);
-	return list;
+float HostnameUsername::getPercent(){
+	return -1;
 }
